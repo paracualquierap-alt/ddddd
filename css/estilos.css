@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(112, 248, 203);
+}
+.padre {
+    background-color: rgb(99, 236, 236);
+    padding: 15px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas: "titulo titulo" 
+                        "men men"
+                        "contenido public"
+                        "pie pie" ;
+}
+.titulo {
+    grid-area: titulo;
+    background-color: rgb(245, 178, 90);
+    border-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.men {
+    grid-area: men;
+    background-color: rgb(253, 251, 148);
+    border-color: aqua;
+    padding: 5px;
+}
+.contenido {
+    grid-area: contenido;
+    background-color: rgb(221, 134, 134);
+    border-color: aqua;
+}
+.public {
+    grid-area: public;
+    background-color: rgb(199, 255, 136);
+    border-color: aqua;
+}
+.pie {
+    grid-area: pie;
+    background-color: rgb(255, 200, 127);
+    border-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
